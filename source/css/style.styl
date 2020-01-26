@@ -5,15 +5,23 @@ screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
+dark-bg-primary = #1B1C1D
+dark-bg-secondary = #3E4042
+dark-bg-invert = #858A8D
+dark-font-primary = #F8F8F9
+dark-font-secondary = #CDD1D4
+
 
 /* ---------------------------------
  *       Override CSS Framework
  * --------------------------------- */
 html
     font-size: 14px
-
+a 
+    color: #2e9fff
 body
-    background-color: #f7f7f7
+    background-color: dark-bg-primary
+    color: dark-font-primary
 
 body, button, input, select, textarea
     font-family: family-sans
@@ -113,7 +121,7 @@ img.thumbnail
             margin-left: 0
 
 .footer
-    background: white
+    background: dark-bg-secondary
     .field
         .button
             background: transparent
@@ -132,7 +140,8 @@ img.thumbnail
 
 .pagination
     .pagination-link:not(.is-current), .pagination-previous, .pagination-next
-        background: white
+        background: dark-bg-secondary
+        color: dark-font-primary !important
         border: none
     .pagination-link, .pagination-previous, .pagination-next
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
@@ -300,13 +309,13 @@ img.thumbnail
 .has-link-black-ter
     transition: 0.2s ease
     &:hover
-        color: hsl(217, 71%, 53%) !important
+        color: hsl(217, 71%, 53%)
 
 .has-link-grey
-    color: hsl(0, 0%, 48%) !important
+    color: hsl(0, 0%, 48%)
 
 .has-link-black-ter
-    color: hsl(0, 0%, 14%) !important
+    color: hsl(0, 0%, 14%)
 
 @media screen and (max-width: screen-tablet - 1)
     .has-text-centered-mobile
@@ -472,3 +481,42 @@ figure.highlight
             border: none
     .file
         all: initial
+
+.card
+    background-color: dark-bg-secondary
+    color: dark-font-primary
+
+.has-link-black-ter
+    color: dark-font-primary 
+.title
+    color: dark-font-primary 
+.menu-list a 
+    color: dark-font-primary
+.menu-label
+    color: dark-font-primary
+.has-text-grey, .has-text-grey-ter, .has-link-grey
+    color: dark-font-secondary !important
+.has-text-black, .has-text-black-ter, .has-link-black
+    color: dark-font-primary !important
+.button.is-light
+    background-color: inherit !important
+    color: dark-font-primary !important
+.button.is-white
+    background-color: inherit !important
+    color: dark-font-primary !important
+.content
+    h1, h2, h3, h4, h5, h6, strong
+        color: dark-font-primary 
+    p
+        color: dark-font-secondary 
+    blockquote
+        background-color: dark-bg-primary
+    table
+        thead
+            th
+                color: dark-font-primary 
+.navbar, .navbar-menu, .navbar-item
+    background-color: dark-bg-secondary
+    color: dark-font-secondary
+.navbar-item.is-active
+    color: dark-font-primary !important

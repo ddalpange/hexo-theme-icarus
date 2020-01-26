@@ -1,4 +1,4 @@
-family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
+family-sans = "apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
 gap = 64px
 screen-tablet = 769px
@@ -176,7 +176,6 @@ img.thumbnail
             top: calc(1.3rem + 9px)
             width: 9px
             bottom: 0
-            background: white
         &:first-child:last-child:after
             top: calc(0.3rem + 9px)
 
@@ -356,8 +355,8 @@ img.thumbnail
         background: transparent
     & > code,
     :not(pre) > code
-        font-size: 0.85em
-        color: hsl(348, 100%, 61%)
+        font-family: family-sans
+        color: #26e669
     blockquote
         footer
             strong + cite
